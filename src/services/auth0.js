@@ -29,16 +29,16 @@ export function showLogin() {
 
   if (Platform.OS === 'ios') {
     lock.customizeTheme({
-      A0ThemePrimaryButtonNormalColor: '#39babd',
+      A0ThemePrimaryButtonNormalColor: '#48BBEC',
       A0ThemePrimaryButtonHighlightedColor: '#08AFB3',
-      A0ThemeSecondaryButtonTextColor: '#ffffff',
-      A0ThemeTextFieldTextColor: '#ffffff',
-      A0ThemeTextFieldPlaceholderTextColor: '#ffffff',
-      A0ThemeTextFieldIconColor: '#ffffff',
-      A0ThemeTitleTextColor: '#ffffff',
-      A0ThemeDescriptionTextColor: '#ffffff',
-      A0ThemeSeparatorTextColor: '#ffffff',
-      A0ThemeScreenBackgroundColor: '#39babd',
+      A0ThemeSecondaryButtonTextColor: '#48BBEC',
+      A0ThemeTextFieldTextColor: '#323232',
+      A0ThemeTextFieldPlaceholderTextColor: '#808080',
+      A0ThemeTextFieldIconColor: '#48BBEC',
+      A0ThemeTitleTextColor: '#48BBEC',
+      A0ThemeDescriptionTextColor: '#48BBEC',
+      A0ThemeSeparatorTextColor: '#48BBEC',
+      A0ThemeScreenBackgroundColor: '#F5FCFF',
       A0ThemeIconImageName: 'pepperoni',
       A0ThemeCredentialBoxBorderColor: '' //transparent
     });
