@@ -374,13 +374,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TisoulRN" */;
 			buildPhases = (
-				98EAEF8AC12B4BC7892DB9B9 /* 📦 Check Pods Manifest.lock */,
+				98EAEF8AC12B4BC7892DB9B9 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				27A9C0C7F07A81753CC7FD4F /* 📦 Embed Pods Frameworks */,
-				3F007284397F85AD6CF9BF16 /* 📦 Copy Pods Resources */,
+				27A9C0C7F07A81753CC7FD4F /* [CP] Embed Pods Frameworks */,
+				3F007284397F85AD6CF9BF16 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -585,14 +585,14 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/packager/react-native-xcode.sh";
 		};
-		27A9C0C7F07A81753CC7FD4F /* 📦 Embed Pods Frameworks */ = {
+		27A9C0C7F07A81753CC7FD4F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,14 +600,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TisoulRN/Pods-TisoulRN-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3F007284397F85AD6CF9BF16 /* 📦 Copy Pods Resources */ = {
+		3F007284397F85AD6CF9BF16 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,14 +615,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TisoulRN/Pods-TisoulRN-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		98EAEF8AC12B4BC7892DB9B9 /* 📦 Check Pods Manifest.lock */ = {
+		98EAEF8AC12B4BC7892DB9B9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;

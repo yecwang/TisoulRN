@@ -1,13 +1,12 @@
 {
   "name": "TisoulRN",
-  "author": "Futurice",
-  "description": "React Native App Starter Kit for Android and iOS",
+  "author": "Tisoul",
+  "description": "React Native App Study",
   "license": "MIT",
-  "homepage": "http://getpepperoni.com",
-  "bugs": "https://github.com/futurice/pepperoni-app-kit/issues",
+  "homepage": "http://wwww.tisoultech.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/futurice/pepperoni-app-kit"
+    "url": "https://github.com/tisoultech/TisoulRN"
   },
   "keywords": [
     "React Native",

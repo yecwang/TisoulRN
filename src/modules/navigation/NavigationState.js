@@ -14,6 +14,7 @@ export function switchTab(index) {
 }
 
 // Action creators
+// TIP: This is redux thunk function, note, the getState() return global entire state.
 export function pushRoute(state) {
   return (dispatch, getState) => {
     // conditionally execute push to avoid double
@@ -78,6 +79,9 @@ function createNavigationState(key, title, children) {
   };
 }
 
+// TIP: the state is global entire state. that is reason the path is ['navigationState',  'isNavigating']
+// The method is called by a thunk function
 function isNavigationAnimationInProgress(state) {
-  return state.getIn(['navigationState', 'isNavigating']);
+  return state.getIn(['navigationState',  'isNavigating']);
+
 }
