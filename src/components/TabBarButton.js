@@ -16,9 +16,9 @@ export default React.createClass({
     return (
       <TouchableOpacity
         onPress={this.props.action}
-        style={[styles.button, this.props.isSelected && styles.selected]}
+        style={styles.button}
         >
-        <Text>{this.props.text}</Text>
+        <Text style={this.props.isSelected && styles.selectedText}>{this.props.text}</Text>
       </TouchableOpacity>
     );
   }
@@ -32,5 +32,11 @@ const styles = StyleSheet.create({
   },
   selected: {
     backgroundColor: 'yellow'
+    //color: '#fff',
+    
+  },
+  selectedText: {
+    color: 'green',
+    fontWeight: 'bold', 
   }
 });

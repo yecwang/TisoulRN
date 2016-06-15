@@ -21,13 +21,14 @@ const AppView = React.createClass({
         const {dispatch} = this.props;
 
         if (snapshot) {
-          dispatch(SessionStateActions.resetSessionStateFromSnapshot(snapshot));
+         // dispatch(SessionStateActions.resetSessionStateFromSnapshot(snapshot));
+          dispatch(SessionStateActions.initializeSessionState());
         } else {
           dispatch(SessionStateActions.initializeSessionState());
         }
 
         store.subscribe(() => {
-          snapshotUtil.saveSnapshot(store.getState());
+       //   snapshotUtil.saveSnapshot(store.getState());
         });
       });
   },

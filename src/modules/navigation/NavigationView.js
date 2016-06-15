@@ -21,6 +21,7 @@ const NavigationView = React.createClass({
     const {children, index} = this.props.navigationState;
     const tabs = children.map((tabState, tabIndex) => {
       return (
+        //                                                        this is short circuit "&&"
         <View key={'tab' + tabIndex} style={[styles.viewContainer, index !== tabIndex && styles.hidden]}>
           <NavigationTabView
             router={AppRouter}

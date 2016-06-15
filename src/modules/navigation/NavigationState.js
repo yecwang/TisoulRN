@@ -35,8 +35,8 @@ export function navigationCompleted() {
 
 const initialState = fromJS(
   createNavigationState('MainNavigation', 'App', [
-    createNavigationState('HomeTab', 'Home', [{key: 'Counter', title: 'Counter'}]),
-    createNavigationState('ProfileTab', 'Profile', [{key: 'Color', title: 'Color'}])
+    createNavigationState('HomeTab', 'Tracking', [{key: 'Counter', title: 'Counter'}]),
+    createNavigationState('ProfileTab', 'Me', [{key: 'Color', title: 'Color'}])
   ]));
 
 export default function NavigationReducer(state = initialState, action) {
