@@ -1,6 +1,11 @@
 import * as CounterState from './CounterState';
 import * as NavigationState from '../../modules/navigation/NavigationState';
 import React, {PropTypes} from 'react';
+import * as AuthStateActions from '../../modules/auth/AuthState';
+import * as auth0 from '../../services/auth0';
+import * as SessionStateActions from '../../modules/session/SessionState';
+
+
 import {
   StyleSheet,
   TouchableOpacity,
@@ -29,6 +34,15 @@ const CounterView = React.createClass({
   },
   bored() {
     this.props.dispatch(NavigationState.pushRoute({key: 'Color'}));
+  },
+  logout() {
+     
+     this.props.dispatch(AuthStateActions.onUserLoginError());
+    // this.props.dispatch(NavigationState.pushRoute({key: 'Color'}));
+    this.props.dispatch(SessionStateActions.initializeSessionState());
+
+     auth0.showLogin();
+
   },
 
   renderUserInfo() {
@@ -82,7 +96,7 @@ const CounterView = React.createClass({
           </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={this.bored} accessible={true}>
+        <TouchableOpacity onPress={this.logout} accessible={true}>
           <Text style={styles.linkButton}>
             {'I\'m bored!'}
           </Text>

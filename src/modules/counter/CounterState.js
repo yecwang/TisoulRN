@@ -36,6 +36,16 @@ export async function requestRandomNumber() {
   };
 }
 
+export async function logout() {
+
+  return {
+    type: LOGOUT,
+    payload: await
+  };
+}
+
+
+
 // Reducer
 export default function CounterStateReducer(state = initialState, action = {}) {
   switch (action.type) {
